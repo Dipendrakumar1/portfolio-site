@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  background-color: rgba(14, 23, 49, 255);
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.nav-bar {
+  /* background-color: rgba(14,23,49,255); */
+  /* background-color: brown; */
+  display: flex;
+  justify-content: space-between;
+  /* Distribute space between logo and nav items */
+  align-items: center;
+  /* Align items vertically in the center */
+  padding: 10px;
+  overflow: hidden;
+
+}
+
+.ul-list {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 50px;
+
+}
+
+.ul-list li {
+  margin-left: 2rem;
+}
+
+.ul-list li a {
+  text-decoration: none;
+}
+
+.ul-list li a:hover {
+  background-color: yellow;
+}
+
+.logo img {
+  max-height: 90px;
+  box-shadow: none;
+}
+
+.section {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.profile-section {
+  /* background-color:brown; */
+  display: flex;
+  align-items: center;
+  /* Center items vertically */
+  padding: 20px;
+}
+
+
+.info {
+  flex: 1;
+  /* Take up remaining space */
+  margin-right: 20px;
+  /* Add margin for spacing */
+}
+
+.photo {
+  margin-right: 50px;
+}
+
+@keyframes borderMove {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes lightning {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0.7;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.photo img {
+  max-width: 25rem;
+  /* Ensure the photo doesn't exceed its container */
+  height: auto;
+  /* Maintain aspect ratio */
+  display: block;
+  /* Remove extra space beneath the image */
+  border: 5px solid #6b1a1a;
+  /* Set the border style and color */
+  animation: borderMove 4s infinite alternate, lightning 2s infinite;
+  border-radius: 50%;
+}
+
+
+
+
+
+.simple-line{
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  color: rgb(22, 138, 26);
+}
+
+.simple-line h3::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  width: 30px;
+  height: 1px;
+  /* background: rgb(22, 138, 26); */
+
+}
+
+.about-me {
+  padding-top: 10px;
+  /* background-color: green; */
+}
+
+.connect-button {
+  padding-top: 10px;
+  padding-left: 20px;
+  /* background-color: aliceblue; */
+}
+
+.below-photo-name {
+  text-align: center;
+}
+
+/* .section-style{
+  margin-left: 1.5rem;
+} */
+.education {
+  padding-top: 10px;
+  padding-left: 25px;
+}
+
+.education-img img {
+  height: 250px;
+  width: 300px;
+  border: rgb(66, 18, 82) solid 2px;
+}
+.div-size{
+ height: auto;
+ width: 300px;
+}
+.main-education-div {
+  /* background-color: brown; */
+  display: flex;
+  justify-content: space-around;
+  /* Adjust as needed */
+  flex-wrap: wrap;
+  /* Allow cards to wrap to the next line on smaller screens */
+  padding: 20px;
+  /* padding: 1.5rem; */
+}
+footer{
+  /* background-color: #6b1a1a; */
+  text-align: center;
+}
+
+
+/* form css */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  /* background-color: #fff; */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  /* background-color: rgba(14,23,49,255); */
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  /* background-color: #4caf50; */
+  /* color: white; */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+  flex:1;
+}
+.contact-class1{
+  /* background-color: #45a049; */
+  width: 600px; /* Set the width */
+  height: 300px; /* Set the height */ 
+}
+.contact-class1 div{
+  padding-top: 1.5rem;
+}
+.contact-class2{
+  /* background-color: #45a049; */
+}
+
+.skill-class{
+  padding: 1.5rem;
+  display:flex;
+  margin-right: 10px;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  /* border: #45a049 solid; */
+  overflow: hidden;
+  
+}
+.skill-div1{
+  width: 350px;
+  height: auto;
+  margin: 15px;
+  margin-right: 66px;
+  margin-bottom: 8px;
+  /* background-color: #45a049; */
+}
+.skill-div1 h3{
+  text-align: center ;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
+.center-p-element{
+  text-align: center;
+}
+
+/* Star css  */
+.checked {
+  color: orange;
+}
+
+/* Social media icons */
+.social-media-div {
+  margin-top: 10px;
+  width: 220px;
+  /* background-color: #45a049; */
+  display: flex;
+}
+
+.social-media-div i{
+  padding: 10px;
+  padding-left: 25px;
+  font-size: 25px;
+  color: rgb(17, 89, 56); /* Set the color to make the icon visible */
+}
+
+.certificate-div1{
+  /* background-color: #45a049; */
+}
+.certificate-div2 img{
+  height: 450px;
+  width: 500px;
+}
+.internship-certificate-div img{
+  height: 500px;
+  width: 900px;
+
+
+}
