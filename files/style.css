@@ -7,7 +7,7 @@
 
 body {
   background-color: rgba(14, 23, 49, 255);
-  font-family: Arial, sans-serif;
+  /* font-family: Arial, sans-serif; */
   color: white;
 }
 
@@ -26,10 +26,14 @@ body {
 }
 
 .ul-list {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5em;
+  font-style: bold;
   list-style-type: none;
   display: flex;
   margin: 0;
   /* padding: 50px; */
+  padding-right: 2rem;
   flex-wrap: wrap;
   /* background-color: #45a049; */
 
@@ -57,9 +61,10 @@ body {
 }
 
 .section {
-  /* background-color: blue; */
+  /* background-color:#14a04a; */
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+  margin-top: 10rem;
 }
 
 .profile-section {
@@ -77,6 +82,19 @@ body {
   /* Take up remaining space */
   margin-right: 20px;
   /* Add margin for spacing */
+}
+
+#header-name h1{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3em;
+}
+#header-name h1 span{
+ color: aqua;
+}
+#header-name p{
+  font-family: 'Courier New', Courier, monospace;
+  padding-top: 1  rem;
+  font-size: 2em;
 }
 
 .photo {
@@ -134,40 +152,67 @@ body {
 }
 
 
-
-
-
 .simple-line {
-  margin-bottom: 1.5rem;
+  /* margin-bottom: 1.5rem;
   margin-top: 1.5rem;
   font-size: 2rem;
-  color: rgb(22, 138, 26);
+  color: rgb(22, 138, 26); */
+}
+
+.simple-line h3{
+  /* font-family: sans-serif; */
+        /* margin: 10px auto; */
+        font-family:'Courier New', Courier, monospace;
+        color: #deece8;
+        text-align: center;
+        font-size: 1.6rem;
+        max-width: 22rem;
+        padding-left: 1.5rem;
+        position: relative;
+
 }
 
 .simple-line h3::before {
   content: "";
-  position: absolute;
+  display: block;
+  width: 6rem;
+  height: 0.27rem;
+  background: #14a04a;
+  left: 0;
   top: 50%;
-  left: -40px;
-  width: 30px;
-  height: 1px;
-  /* background: rgb(22, 138, 26); */
+  position: absolute;
 
 }
 
 .about-me {
-  padding-top: 10px;
+  padding-top: 2rem;
   /* background-color: green; */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.8em;
 }
 
-.connect-button {
-  padding-top: 10px;
-  padding-left: 20px;
-  /* background-color: aliceblue; */
+.download-button {
+  padding-top: 2rem;
+  /* padding-left: 5rem;
+   */
+  /* background-color: #45a049; */
+  display: flex;
+  justify-content: right;
+  
+}
+.download-button button{
+  font-size: 2.5em;
 }
 
 .below-photo-name {
   text-align: center;
+  
+}
+.below-photo-name {
+ font-family: 'Times New Roman', Times, serif;
+ font-size: 1.5em;
+ color: #ad9f9f;
+ 
 }
 
 /* .section-style{
@@ -196,7 +241,7 @@ body {
   /* Adjust as needed */
   flex-wrap: wrap;
   /* Allow cards to wrap to the next line on smaller screens */
-  padding: 20px;
+  padding: 1.5rem;
   /* padding: 1.5rem; */
 }
 
@@ -243,6 +288,7 @@ button:hover {
 .flex {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   flex: 1;
 }
 
@@ -263,9 +309,13 @@ button:hover {
 }
 
 .skill-class {
+  /* background-color: #6b1a1a; */
+
   padding: 1.5rem;
   display: flex;
-  margin-right: 10px;
+  justify-content: center;
+  margin-top: 2rem;
+  /* margin-right: 10px; */
   /* justify-content: space-between; */
   flex-wrap: wrap;
   /* border: #45a049 solid; */
@@ -274,15 +324,32 @@ button:hover {
 }
 
 .skill-div1 {
-  width: 350px;
+  width: 30rem;
   height: auto;
   margin: 15px;
-  margin-right: 66px;
-  margin-bottom: 8px;
-  /* background-color: #45a049; */
+  /* margin-right: 66px;
+  margin-bottom: 8px; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #45a049;
+}
+.help{
+  /* display: flex;
+  justify-content: center; */
+  background-color: #6b1a1a;
+}
+.help img{
+  
+  background-color: #6b1a1a;
+}
+.help span{
+  padding: 0.5rem;
 }
 
 .skill-div1 h3 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2em;
   text-align: center;
   margin-bottom: 1rem;
   text-decoration: underline;
@@ -315,14 +382,58 @@ button:hover {
 
 .certificate-div1 {
   /* background-color: #45a049; */
+  margin-top: 15rem;
+  height: 25vh;
+  width: 30vw;
+}
+.certificate-div1 h3{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.8em;
+}
+.certificate-div2 {
+  /* background-color: #45a049; */
+  display: flex;
+  /* justify-content: last baseline; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.internship-certificate-div2 {
+  /* background-color: #45a049; */
+  display: flex;
+  justify-content: last baseline;
+  justify-content: space-between;
+  margin-top: 5rem;
+  flex-wrap: wrap;
 }
 
 .certificate-div2 img {
-  height: 5rem;
-  width: 4rem;
+  height: 40vh;
+  width: 35vw;
 }
 
 .internship-certificate-div img {
-  height: 23rem;
-  width: 24rem;
+  height: 55vh;
+  width: 40vw;
+}
+.internship-certificate-div h3{
+ font-family: 'Courier New', Courier, monospace;
+ font-size: 3em;
+ /* text-align: center; */
+}
+.internship-secondary-div{
+  /* margin-left: 1rem; */
+  height: 55vh;
+  width: 80vh;
+  /* background-color: #14a04a; */
+}
+.internship-secondary-div h2{
+  /* margin-left: 10rem; */
+ font-family: 'Courier New', Courier, monospace;
+ font-size: 2em;
+}
+.internship-secondary-div p{
+  /* margin-left: 10rem; */
+ font-family: 'Courier New', Courier, monospace;
+ font-size: 1.5em;
+ padding-top: 1.5rem;
 }
