@@ -8,7 +8,7 @@
 body {
   background-color: rgba(14, 23, 49, 255);
   /* font-family: Arial, sans-serif; */
-  color: white;
+  color: rgb(162, 216, 244);
 }
 
 .nav-bar {
@@ -27,8 +27,8 @@ body {
 
 .ul-list {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 1.5em;
-  font-style: bold;
+  font-size: 1.2em;
+  font-weight:600;
   list-style-type: none;
   display: flex;
   margin: 0;
@@ -49,6 +49,7 @@ body {
 
 .ul-list li a {
   text-decoration: none;
+  color: aliceblue;
 }
 
 .ul-list li a:hover {
@@ -238,8 +239,8 @@ body {
   margin-bottom: 1.5rem;
 }
 .education-img img {
-  height: 35vh;
-  width: 25vw;
+  height: 20rem;
+  width: 25rem;
   
   border: rgb(66, 18, 82) solid 2px;
 }
@@ -309,9 +310,9 @@ button:hover {
 
 .contact-class1 {
   /* background-color: #45a049; */
-  width: 600px;
+  width: 30rem;
   /* Set the width */
-  height: 300px;
+  height: 30rem;
   /* Set the height */
 }
 
@@ -443,13 +444,13 @@ color: white;
 }
 
 .certificate-div2 img {
-  height: 35vh;
-  width: 30vw;
+  height: 25rem;
+  width: 30rem;
 }
 
 .internship-certificate-div img {
-  height: 55vh;
-  width: 40vw;
+  height: 25rem;
+  width: 35rem;
 }
 .internship-certificate-div h3{
  font-family: 'Courier New', Courier, monospace;
