@@ -22,13 +22,15 @@ body {
   padding-top: 10px;
   /* background-color: aliceblue; */
   flex-wrap: wrap;
+  background-color: rgb(26, 43, 43);
+  border-radius: 10px;
 
 }
 
 .ul-list {
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.2em;
-  font-weight:600;
+  font-weight: 600;
   list-style-type: none;
   display: flex;
   margin: 0;
@@ -50,11 +52,15 @@ body {
 .ul-list li a {
   text-decoration: none;
   color: aliceblue;
+  font-size: 110%;
+
+
 }
 
 .ul-list li a:hover {
   background-color: yellow;
 }
+
 
 .logo img {
   max-height: 90px;
@@ -66,6 +72,9 @@ body {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   margin-top: 10rem;
+  /* background-color: rgb(26, 43, 43); */
+  background-color: rgb(1, 12, 12);
+  border-radius: 15px;
 }
 
 .profile-section {
@@ -74,6 +83,8 @@ body {
   flex-wrap: wrap;
   align-items: center;
   margin-top: 5rem;
+  background-color: rgb(26, 43, 43);
+  border-radius: 15px;
   /* Center items vertically */
   /* padding: 20px; */
 }
@@ -86,16 +97,18 @@ body {
   /* Add margin for spacing */
 }
 
-#header-name h1{
+#header-name h1 {
   font-family: 'Courier New', Courier, monospace;
   font-size: 3em;
 }
-#header-name h1 span{
- color: aqua;
+
+#header-name h1 span {
+  color: aqua;
 }
-#header-name p{
+
+#header-name p {
   font-family: 'Courier New', Courier, monospace;
-  padding-top: 1  rem;
+  padding-top: 1 rem;
   font-size: 2em;
 }
 
@@ -153,16 +166,16 @@ body {
   border-radius: 50%;
 }
 
-.simple-line h3{
+.simple-line h3 {
   /* font-family: sans-serif; */
-        /* margin: 10px auto; */
-        font-family:'Courier New', Courier, monospace;
-        color: #deece8;
-        text-align: center;
-        font-size: 1.6rem;
-        max-width: 22rem;
-        padding-left: 1.5rem;
-        position: relative;
+  /* margin: 10px auto; */
+  font-family: 'Courier New', Courier, monospace;
+  color: #deece8;
+  text-align: center;
+  font-size: 1.6rem;
+  max-width: 22rem;
+  padding-left: 1.5rem;
+  position: relative;
 
 }
 
@@ -192,21 +205,23 @@ body {
   /* background-color: #45a049; */
   display: flex;
   justify-content: right;
-  
+
 }
-.download-button button{
+
+.download-button button {
   font-size: 2.5em;
 }
 
 .below-photo-name {
   text-align: center;
-  
+
 }
+
 .below-photo-name {
- font-family: 'Times New Roman', Times, serif;
- font-size: 1.5em;
- color: #ad9f9f;
- 
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5em;
+  color: #ad9f9f;
+
 }
 
 /* .section-style{
@@ -218,17 +233,19 @@ body {
   padding-left: 1.8rem;
   /* background-color: #14a04a; */
 }
-.education h3{
+
+.education h3 {
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.8em;
   margin-bottom: 1.2rem;
   text-align: center;
 }
+
 /* .div-size{
   display: flex;
   flex-wrap: wrap;
 } */
-.div-size p{
+.div-size p {
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.2em;
 
@@ -238,10 +255,11 @@ body {
   margin-right: rem;
   margin-bottom: 1.5rem;
 }
+
 .education-img img {
   height: 20rem;
   width: 25rem;
-  
+
   border: rgb(66, 18, 82) solid 2px;
 }
 
@@ -324,7 +342,7 @@ button:hover {
   /* background-color: #45a049; */
 }
 
-.logos img{
+.logos img {
   padding-left: 1.5rem;
   margin-top: 1.5rem;
   /* font-size: 10em; */
@@ -345,6 +363,8 @@ button:hover {
 
 }
 
+
+
 .skill-div1 {
   width: 30rem;
   height: auto;
@@ -355,17 +375,29 @@ button:hover {
   justify-content: center;
   flex-wrap: wrap;
   /* background-color: #45a049; */
+  background-color: rgb(26, 43, 43);
+  border-radius: 10px;
+  transition: 1s;
 }
-.help{
+
+.skill-div1:hover {
+  transform: scale(1.2);
+  /* background: #ff800a; */
+  z-index: 2;
+  box-shadow: 2px 2px 2px #000;
+}
+.help {
   /* display: flex;
   justify-content: center; */
   background-color: #6b1a1a;
 }
-.help img{
-  
+
+.help img {
+
   background-color: #6b1a1a;
 }
-.help span{
+
+.help span {
   padding: 0.5rem;
 }
 
@@ -393,16 +425,19 @@ button:hover {
   /* background-color: #45a049; */
   display: flex;
 }
-.contact-class1 h4 i{
-margin-right:0.6rem;
+
+.contact-class1 h4 i {
+  margin-right: 0.6rem;
 }
-.contact-class1 h4{
-font-family: 'Courier New', Courier, monospace;
-font-size: 1.1em;
+
+.contact-class1 h4 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1em;
 }
-.contact-class1 h4 a{
-text-decoration: none;
-color: white;
+
+.contact-class1 h4 a {
+  text-decoration: none;
+  color: white;
 }
 
 .social-media-div i {
@@ -421,19 +456,22 @@ color: white;
   /* height: 10rem;
   width: 15rem; */
 }
-.certificate-div1 h3{
+
+.certificate-div1 h3 {
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.8em;
   text-align: center;
 }
+
 .certificate-div2 {
   /* background-color: #45a049; */
   margin-top: 1.2rem;
   display: flex;
   /* justify-content: last baseline; */
-  justify-content:center;
+  justify-content: center;
   flex-wrap: wrap;
 }
+
 .internship-certificate-div2 {
   /* background-color: #45a049; */
   display: flex;
@@ -452,30 +490,34 @@ color: white;
   height: 25rem;
   width: 35rem;
 }
-.internship-certificate-div h3{
- font-family: 'Courier New', Courier, monospace;
- font-size: 3em;
- /* text-align: center; */
+
+.internship-certificate-div h3 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3em;
+  /* text-align: center; */
 }
-.internship-secondary-div{
+
+.internship-secondary-div {
   /* margin-left: 1rem; */
   height: 55vh;
   width: 80vh;
   /* background-color: #14a04a; */
 }
-.internship-secondary-div h2{
+
+.internship-secondary-div h2 {
   /* margin-left: 10rem; */
- font-family: 'Courier New', Courier, monospace;
- font-size: 2em;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2em;
 }
-.internship-secondary-div p{
+
+.internship-secondary-div p {
   /* margin-left: 10rem; */
- font-family: 'Courier New', Courier, monospace;
- font-size: 1.5em;
- padding-top: 1.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5em;
+  padding-top: 1.5rem;
 }
 
 
-footer p{
+footer p {
   font-family: 'Courier New', Courier, monospace;
 }
