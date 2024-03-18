@@ -47,6 +47,8 @@ body {
 
 .ul-list li {
   margin-left: 2rem;
+  border: #14a04a 0.1rem solid;
+  border-radius: 0.5rem;
 }
 
 .ul-list li a {
@@ -83,8 +85,8 @@ body {
   flex-wrap: wrap;
   align-items: center;
   margin-top: 5rem;
-  background-color: rgb(26, 43, 43);
-  border-radius: 15px;
+  /* background-color: rgb(26, 43, 43);
+  border-radius: 15px; */
   /* Center items vertically */
   /* padding: 20px; */
 }
@@ -95,6 +97,8 @@ body {
   /* Take up remaining space */
   margin-right: 20px;
   /* Add margin for spacing */
+  background-color: rgb(26, 43, 43);
+  border-radius: 15px;
 }
 
 #header-name h1 {
@@ -154,7 +158,7 @@ body {
 }
 
 .photo img {
-  max-width: 25rem;
+  max-width: 20rem;
   /* Ensure the photo doesn't exceed its container */
   height: auto;
   /* Maintain aspect ratio */
@@ -162,7 +166,7 @@ body {
   /* Remove extra space beneath the image */
   border: 5px solid #6b1a1a;
   /* Set the border style and color */
-  animation: borderMove 4s infinite alternate, lightning 2s infinite;
+  animation: borderMove 4s infinite alternate, lightning 5s infinite;
   border-radius: 50%;
 }
 
@@ -174,6 +178,7 @@ body {
   text-align: center;
   font-size: 1.6rem;
   max-width: 22rem;
+  margin-left: 2rem;
   padding-left: 1.5rem;
   position: relative;
 
@@ -205,11 +210,15 @@ body {
   /* background-color: #45a049; */
   display: flex;
   justify-content: right;
-
 }
 
 .download-button button {
-  font-size: 2.5em;
+  /* font-size: 2.5em; */
+  /* border-radius: 70%; */
+  font-size: 1.9em;
+  height: 11.25rem;
+  width: 11.25rem;
+  border-radius: 70%;
 }
 
 .below-photo-name {
@@ -250,7 +259,10 @@ body {
   font-size: 1.2em;
 
 }
-
+.education-img{
+  background-color: rgb(26, 43, 43);
+  border-radius: 10px;
+}
 .education-img img {
   margin-right: rem;
   margin-bottom: 1.5rem;
@@ -268,16 +280,6 @@ body {
   width: 25rem;
 }
 
-.main-education-div {
-  /* background-color: brown; */
-  display: flex;
-  justify-content: space-between;
-  /* Adjust as needed */
-  flex-wrap: wrap;
-  /* Allow cards to wrap to the next line on smaller screens */
-  padding: 1.5rem;
-  /* padding: 1.5rem; */
-}
 
 footer {
   /* background-color: #6b1a1a; */
@@ -449,12 +451,30 @@ button:hover {
 }
 
 
+.main-education-div {
+  /* background-color: brown; */
+  display: flex;
+  justify-content:space-around;
+  /* Adjust as needed */
+  flex-wrap: wrap;
+  /* Allow cards to wrap to the next line on smaller screens */
+  padding: 1.5rem;
+  /* padding: 1.5rem; */
+}
+
+
 .certificate-div1 {
   /* background-color: #45a049; */
   margin-top: 5rem;
   margin-left: 1.5rem;
   /* height: 10rem;
   width: 15rem; */
+  height: 28rem;
+  width: 30rem;
+  /* display: flex;
+  justify-content: center; */
+  background-color: rgb(26, 43, 43);
+  border-radius: 10px;
 }
 
 .certificate-div1 h3 {
@@ -472,23 +492,40 @@ button:hover {
   flex-wrap: wrap;
 }
 
+.certificate-div2 img { 
+  height: 20rem;
+  width: 25rem;
+}
 .internship-certificate-div2 {
-  /* background-color: #45a049; */
+  /* background-color: #620c7c; */
   display: flex;
-  justify-content: last baseline;
+  justify-content: last;
   justify-content: space-between;
   margin-top: 5rem;
   flex-wrap: wrap;
 }
+.internship-certificate-div2 div{
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
 
-.certificate-div2 img {
-  height: 25rem;
-  width: 30rem;
+
 }
-
-.internship-certificate-div img {
+.internship-img-div{
+   
   height: 25rem;
   width: 35rem;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(26, 43, 43);
+  border-radius: 10px;
+
+}
+
+
+.internship-certificate-div img {
+  margin-top: 2rem;
+  height: 20rem;
+  width: 25rem;
 }
 
 .internship-certificate-div h3 {
@@ -499,16 +536,12 @@ button:hover {
 
 .internship-secondary-div {
   /* margin-left: 1rem; */
-  height: 55vh;
-  width: 80vh;
+  height: auto;
+  width: 35rem;
   /* background-color: #14a04a; */
 }
 
-.internship-secondary-div h2 {
-  /* margin-left: 10rem; */
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 2em;
-}
+
 
 .internship-secondary-div p {
   /* margin-left: 10rem; */

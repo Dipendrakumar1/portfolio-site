@@ -1,11 +1,11 @@
 function sendEmail(){
     console.log('Hello testing');
     Email.send({
-        // SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
-        Host : "smtp.gmail.com",
-        Username : "yadavdipendra766@gmail.com",
-        Password : "",
-        To : 'yadavdipendra766@gmail.com',
+        SecureToken : "863E2B102131CFC72E58F73ECC293F42DBA3",
+        // Host : "smtp.gmail.com",
+        // Username : "yadavdipendra766@gmail.com",
+        // Password : "",
+        To : 'deepydv593@gmail.com',
         From :document.getElementById('email').value,
         Subject : "New Form Enquiry",
         Body : "Name: "+document.getElementById('name').value
