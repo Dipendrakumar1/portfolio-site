@@ -165,10 +165,10 @@ body {
   /* Maintain aspect ratio */
   display: block;
   /* Remove extra space beneath the image */
-  border: 5px solid #6b1a1a;
+  /* border: 5px solid #6b1a1a; */
   /* Set the border style and color */
   animation: borderMove 4s infinite alternate, lightning 5s infinite;
-  border-radius: 50%;
+  border-radius: 0.5rem;
 }
 
 .simple-line h3 {
