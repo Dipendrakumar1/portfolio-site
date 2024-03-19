@@ -1,7 +1,7 @@
 function sendEmail(){
-    console.log('Hello testing');
+    // console.log('Hello testing');
     Email.send({
-        SecureToken : "863E2B102131CFC72E58F73ECC293F42DBA3",
+        SecureToken : "176fa54d-90bd-4fd5-bec9-0aa78a7fde3d",
         // Host : "smtp.gmail.com",
         // Username : "yadavdipendra766@gmail.com",
         // Password : "",

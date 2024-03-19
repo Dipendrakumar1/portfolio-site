@@ -326,7 +326,7 @@
 
           <h4> <i class="fa fa-map-marker"></i> Bhubaneswar, Odisha</h4>
           <br />
-          <h4><i class="fa fa-envelope"></i><a href="mailto:someone@example.com">
+          <h4><i class="fa fa-envelope"></i><a href="mailto:dipendra.atwork@gmail.com">
               dipendra.atwork@gmail.com</a></h4>
 
           <icon class="social-media-div">
@@ -346,7 +346,7 @@
         <div class="simple-line">
           <h3>Drop A Message</h3>
         </div>
-        <form onsubmit="sendEmail(); return false; ">
+        <form onsubmit="sendEmail(); reset(); return false;">
           <input type="text" id="name" name="name" placeholder="Enter your name" required>
           <input type="email" id="email" name="email" placeholder="Enter your email" required>
           <textarea id="message" name="message" placeholder="Type your message here" rows="4" required></textarea>
@@ -364,7 +364,7 @@
 
   </footer>
 
-  <script src="https://smtpjs.com/v3/smtp.js">
+  <script src="https://smtpjs.com/v3/smtp.js" defer>
   </script>
 
 </body>
