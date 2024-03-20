@@ -2,11 +2,12 @@
   margin: 0;
   padding: 0;
   /* box-sizing: border-box; */
+  font-style: oblique;
 
 }
 
 body {
-  background-color: rgba(14, 23, 49, 255);
+  background-color: rgb(14, 23, 49, 255);
   /* font-family: Arial, sans-serif; */
   color: rgb(162, 216, 244);
 }
@@ -22,7 +23,9 @@ body {
   padding-top: 10px;
   /* background-color: aliceblue; */
   flex-wrap: wrap;
-  background-color: rgb(26, 43, 43);
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  background-color: rgb(1, 12, 12);
   border-radius: 10px;
 
 }
@@ -62,7 +65,9 @@ body {
 .ul-list li a:hover {
   background-color: yellow;
 }
-
+.logo{
+  margin-left: 0.9rem;
+}
 
 .logo img {
   max-height: 90px;
@@ -77,6 +82,8 @@ body {
   margin-top: 10rem;
   /* background-color:red; */
   background-color: rgb(1, 12, 12);
+  
+  /* background-color: rgb(20, 15, 95); */
   border-radius: 1.5rem;
 }
 
@@ -86,6 +93,8 @@ body {
   flex-wrap: wrap;
   align-items: center;
   margin-top: 5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
   /* background-color: rgb(26, 43, 43);
   border-radius: 15px; */
   /* Center items vertically */
@@ -96,15 +105,23 @@ body {
 .info {
   flex: 1;
   /* Take up remaining space */
-  margin-right: 20px;
+  margin-right: 1.3rem;
+  margin-top: 5rem;
+  padding-left: 0.8rem;
   /* Add margin for spacing */
-  background-color: rgb(26, 43, 43);
+  /* background-color: rgb(26, 43, 43); */
+  background-color: rgb(1, 12, 12);
   border-radius: 15px;
+}
+
+.header-name{
+  margin-top: 1rem;
 }
 
 #header-name h1 {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 3em;
+  margin-top: 2.5rem;
+  font-size: 2em;
 }
 
 #header-name h1 span {
@@ -114,7 +131,7 @@ body {
 #header-name p {
   font-family: 'Courier New', Courier, monospace;
   padding-top: 1 rem;
-  font-size: 2em;
+  font-size: 1em;
 }
 
 .photo {
@@ -171,6 +188,17 @@ body {
   border-radius: 0.5rem;
 }
 
+/* college name design */
+#college-name {
+  /* color: #68d491; */
+  font-weight: bolder;
+
+}
+
+
+/* .simple-line{
+  padding-top: 2rem;
+} */
 .simple-line h3 {
   /* font-family: sans-serif; */
   /* margin: 10px auto; */
@@ -178,8 +206,10 @@ body {
   color: #deece8;
   text-align: center;
   font-size: 1.5rem;
+  font-weight: bolder;
   max-width: 22rem;
   margin-left: 2rem;
+  /* margin-top: 2rem; */
   padding-left: 1.5rem;
   position: relative;
 
@@ -188,6 +218,7 @@ body {
 .simple-line h3::before {
   content: "";
   display: block;
+  flex-wrap: wrap;
   width: 5rem;
   height: 0.27rem;
   background: #14a04a;
@@ -201,7 +232,7 @@ body {
   padding-top: 2rem;
   /* background-color: green; */
   font-family: 'Courier New', Courier, monospace;
-  font-size: 1.8em;
+  font-size: 1.3em;
 }
 
 .download-button {
@@ -266,11 +297,13 @@ body {
   font-size: 1.2em;
 
 }
-.education-img{
+
+.education-img {
   margin-right: 2rem;
   /* background-color: #14a04a; */
- 
+
 }
+
 .education-img img {
   margin-right: rem;
   margin-bottom: 1.5rem;
@@ -396,6 +429,7 @@ button:hover {
   z-index: 2;
   box-shadow: 2px 2px 2px #000;
 }
+
 .help {
   /* display: flex;
   justify-content: center; */
@@ -462,7 +496,7 @@ button:hover {
 .main-education-div {
   /* background-color: brown; */
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   /* Adjust as needed */
   flex-wrap: wrap;
   /* Allow cards to wrap to the next line on smaller screens */
@@ -500,10 +534,11 @@ button:hover {
   flex-wrap: wrap;
 }
 
-.certificate-div2 img { 
+.certificate-div2 img {
   height: 20rem;
   width: 25rem;
 }
+
 .internship-certificate-div2 {
   /* background-color: #620c7c; */
   display: flex;
@@ -512,14 +547,16 @@ button:hover {
   margin-top: 5rem;
   flex-wrap: wrap;
 }
-.internship-certificate-div2 div{
+
+.internship-certificate-div2 div {
   margin-left: 2rem;
   margin-bottom: 1.5rem;
 
 
 }
-.internship-img-div{
-   
+
+.internship-img-div {
+
   height: 25rem;
   width: 35rem;
   display: flex;
@@ -556,6 +593,9 @@ button:hover {
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.5em;
   padding-top: 1.5rem;
+}
+.location-section{
+  margin-left: 0.9rem;
 }
 
 
