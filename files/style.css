@@ -288,10 +288,12 @@ body {
   text-align: center;
 }
 
-/* .div-size{
-  display: flex;
-  flex-wrap: wrap;
-} */
+.div-size{
+  background-color: rgb(15, 29, 29);
+  
+   /* background-color: #6b1a1a; */
+  border-radius: 10px;
+}
 .div-size p {
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.2em;
