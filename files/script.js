@@ -17,7 +17,7 @@ function sendEmail() {
             } else {
                 alert("Error: " + message);
             }
-        }
+        } 
     );
 }
 

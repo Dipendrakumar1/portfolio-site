@@ -605,3 +605,106 @@ section h2::after {
   animation: blink 1.2s infinite ease-in-out;
   box-shadow: 0 0 8px rgba(0, 128, 0, 0.7);
 }
+
+#current-work {
+  padding: 40px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+#current-work h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.current-card {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.current-icon {
+  font-size: 40px;
+}
+
+.current-content {
+  text-align: left;
+}
+
+.status-badge {
+  display: inline-block;
+  background: #4CAF50;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  animation: pulse 1.5s infinite;
+}
+
+/* Animations */
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.8; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.github-link {
+  margin-top: 10px;
+}
+
+.github-link a {
+  text-decoration: none;
+  color: #0366d6;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.github-link a:hover {
+  color: #024ea0;
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.github-link a:hover .arrow {
+  transform: translateX(4px);
+}
+  
+.linkedin-link {
+  margin-top: 10px;
+}
+
+.linkedin-link a {
+  text-decoration: none;
+  color: #0a66c2; /* LinkedIn blue */
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.linkedin-link a:hover {
+  color: #004182; /* Darker LinkedIn blue */
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.linkedin-link a:hover .arrow {
+  transform: translateX(4px);
+}
+
