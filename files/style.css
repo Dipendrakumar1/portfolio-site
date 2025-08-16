@@ -161,7 +161,8 @@ body {
   padding: 2rem;
 }
 
-.education, .certificate-div1 {
+.education,
+.certificate-div1 {
   background: white;
   padding: 1rem;
   border-radius: 10px;
@@ -169,11 +170,13 @@ body {
   transition: transform 0.3s ease;
 }
 
-.education:hover, .certificate-div1:hover {
+.education:hover,
+.certificate-div1:hover {
   transform: translateY(-5px);
 }
 
-.education-img img, .certificate-div2 img {
+.education-img img,
+.certificate-div2 img {
   width: 100%;
   border-radius: 8px;
 }
@@ -186,7 +189,8 @@ body {
   padding: 2rem;
 }
 
-.contact-class1, .contact-class2 {
+.contact-class1,
+.contact-class2 {
   flex: 1;
   min-width: 300px;
 }
@@ -197,7 +201,8 @@ body {
   gap: 0.8rem;
 }
 
-.contact-class2 input, .contact-class2 textarea {
+.contact-class2 input,
+.contact-class2 textarea {
   padding: 0.6rem;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -242,12 +247,13 @@ footer {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .ul-list {
     flex-wrap: wrap;
     gap: 1rem;
   }
 }
+
 /* ===== Internship Section ===== */
 .main-internship-div {
   display: flex;
@@ -448,11 +454,13 @@ section h2::after {
     transform: translateY(30px);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;
   }
 }
+
 .timeline {
   position: relative;
   max-width: 600px;
@@ -472,14 +480,16 @@ section h2::after {
   top: 20px;
   width: 20px;
   height: 20px;
-  background-color: #ccc; /* default past color */
+  background-color: #ccc;
+  /* default past color */
   border-radius: 50%;
   border: 3px solid white;
   box-shadow: 0 0 0 2px #ccc;
 }
 
 .timeline-item.present .timeline-dot {
-  background-color: #4CAF50; /* green for present */
+  background-color: #4CAF50;
+  /* green for present */
   box-shadow: 0 0 0 2px #4CAF50;
 }
 
@@ -487,7 +497,7 @@ section h2::after {
   background: #f9f9f9;
   padding: 10px 15px;
   border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   animation: fadeInUp 0.6s ease;
 }
 
@@ -507,11 +517,13 @@ section h2::after {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 /* Timeline Section */
 #timeline {
   padding: 50px 20px;
@@ -544,10 +556,21 @@ section h2::after {
   animation: fadeInUp 0.8s forwards;
 }
 
-.timeline-item:nth-child(1) { animation-delay: 0.2s; }
-.timeline-item:nth-child(2) { animation-delay: 0.4s; }
-.timeline-item:nth-child(3) { animation-delay: 0.6s; }
-.timeline-item:nth-child(4) { animation-delay: 0.8s; }
+.timeline-item:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.timeline-item:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.timeline-item:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.timeline-item:nth-child(4) {
+  animation-delay: 0.8s;
+}
 
 /* Timeline dots */
 .timeline-dot {
@@ -567,7 +590,7 @@ section h2::after {
   background: white;
   padding: 15px 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .timeline-content h3 {
@@ -592,11 +615,23 @@ section h2::after {
     transform: translateY(0);
   }
 }
+
 /* Blinking animation */
 @keyframes blink {
-  0% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.3); opacity: 0.6; }
-  100% { transform: scale(1); opacity: 1; }
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.3);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /* Apply only to present (green) timeline dot */
@@ -622,7 +657,7 @@ section h2::after {
   margin: auto;
   background: white;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 20px;
   display: flex;
   align-items: center;
@@ -650,15 +685,34 @@ section h2::after {
 
 /* Animations */
 @keyframes pulse {
-  0% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.05); opacity: 0.8; }
-  100% { transform: scale(1); opacity: 1; }
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 @keyframes fadeInUp {
-  0% { opacity: 0; transform: translateY(20px); }
-  100% { opacity: 1; transform: translateY(0); }
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
 .github-link {
   margin-top: 10px;
 }
@@ -682,21 +736,23 @@ section h2::after {
 .github-link a:hover .arrow {
   transform: translateX(4px);
 }
-  
+
 .linkedin-link {
   margin-top: 10px;
 }
 
 .linkedin-link a {
   text-decoration: none;
-  color: #0a66c2; /* LinkedIn blue */
+  color: #0a66c2;
+  /* LinkedIn blue */
   font-weight: 500;
   font-size: 1rem;
   transition: all 0.2s ease;
 }
 
 .linkedin-link a:hover {
-  color: #004182; /* Darker LinkedIn blue */
+  color: #004182;
+  /* Darker LinkedIn blue */
 }
 
 .arrow {
@@ -708,3 +764,44 @@ section h2::after {
   transform: translateX(4px);
 }
 
+#streak-section {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f9f9f9;
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 900px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+#streak-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#streak-section p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.streak-graph-container {
+  position: relative;
+  height: auto;
+  /* since now we have both chart and img */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  /* space between chart and image */
+}
+.streak-graph-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
